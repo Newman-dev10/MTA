@@ -17,3 +17,4 @@ Wireshark
 
 ## TASK:
  * The IP Address of the Infected Windows.
+![](img/05.png)
