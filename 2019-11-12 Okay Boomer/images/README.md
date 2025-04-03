@@ -16,7 +16,7 @@ LAN segment broadcast address:  10.11.11[.]255
 Operating System- Chrome OS (CrOS)
 Device - Chromebook
 #http.request and ip.addr eq 10.11.11.94
-![](images/01.png)
+![](2019-11-12 Okay Boomer/images/01.png)
 
  **What operating system and type of device is on 10.11.11[.]121?**
 Operating System - Android 9
