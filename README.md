@@ -16,7 +16,7 @@ LAN segment broadcast address:  10.11.11[.]255
 Operating System- Chrome OS (CrOS)
 Device - Chromebook
 #http.request and ip.addr eq 10.11.11.94
-(images/01.png)
+![](MTA/01.png)
 
  **What operating system and type of device is on 10.11.11[.]121?**
 Operating System - Android 9
@@ -27,7 +27,7 @@ Device - Samsung Galaxy Note 8 (Model: SM-N950U, U.S. variant)
   **Based on the MAC address for 10.11.11[.]145, who is the manufacturer or vendor?**
 Motorola
 #ip.src eq 10.11.11.145
-(images/03.png)
+![](MTA/03.png)
 
  **What operating system and type of device is on 10.11.11[.]179?**
 Operating System - macOS Catalina (10.15.1)
