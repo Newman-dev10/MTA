@@ -16,7 +16,7 @@ A Malware traffic analysis exercise from a pcap posted on Malware-Traffic-Analys
 Operating System- Chrome OS (CrOS)  
 Device - Chromebook  
 http.request and ip.addr eq 10.11.11.94  
-![](01.png)
+![](OkayBoomer/Images/01.png)
 
 - What operating system and type of device is on 10.11.11[.]121?
   
