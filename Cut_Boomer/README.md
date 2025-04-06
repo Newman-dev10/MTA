@@ -17,14 +17,14 @@ client?
 -  user account name: **phillip.ghent**
    
  Go to STATISTICS > CONVERSATIONS > IPV4 and see the IP Address which appears the most.  
- ![] (Cat_Boomer/Img/01.png)  
+ ![](Img/01.png)  
  
 To get the URL and the Host name, use the following filter and follow the TCP Stream: **http.request.uri contains "/90"**  
 - **When Trickbot successfully infects a Windows host, it sends an HTTP
 POST request with the system data, usually over TCP port 8082. The URL
 ends with /90**
-![] (catboomer/images/02.png)
-![] (catboomer/images/03.png) 
+![](Img/02.png)
+![](Img/03.png) 
 
 ### 2. What is the other user account name and other Windows client host name
 found in the Trickbot HTTP POST traffic?
@@ -33,7 +33,7 @@ found in the Trickbot HTTP POST traffic?
 
 Other Windows client host name: **CAT-BOMB-W10-PC**  
 Other user account name: **timothy.sizemore**
-![] (catboomer/images/04.png)  
+![](Img/04.png)  
 
 
 ### 3. What is the infected user's email password?  
@@ -43,8 +43,8 @@ Run this filter:
 - frame contains "password" and ip contains "mail" or  
 - http.request.method == "POST" and ip contains "mail"  or
 - http.request.uri contains "/81" and ip contains "mail",....... to find URL ending in /81 to exfiltrate the PASSWORD.
-![] (catboomer/images/05.png)
-![] (catboomer/images/06.png)
+![](Img/05.png)
+![](Img/06.png)
 
 ### 4. Two Windows executable files are sent in the network traffic. What are the SHA256 hashes for these files?  
 
@@ -53,22 +53,22 @@ Run this filter:
 
 - To find Windows EXE files, use the following filter: **http contains "This program"**. This will return 2 frames in the column display, then follow the TCP Streams to download the files.
   
-![] (catboomer/images/07.png)
+![](Img/07.png)
 
-![] (catboomer/images/08.png)  
+![](Img/08.png)  
 The first TCP stream shows an EXE file returned from a URL that ends in imgpaper.png.
 
-![] (catboomer/images/09.png)    
+![](Img/09.png)    
 The second TCP stream shows an EXE file returned from a URL that ends in cursor.png.  
 
-![] (catboomer/images/10.png)  
+![](Img/10.png)  
 Exporting HTTP objects from the pcap.  
 
-![] (catboomer/images/11.png)
+![](Img/11.png)
 Now, export the 2 EXE files.  
 
 - Once you export the files, navigate to the EXE file through the **Terminal** and run the command: shasum -a 256 *.png to get the SHA256 hashes.  
 
-! [] (catboomer/images/12.png)
+![](Img/12.png)
 
 
